@@ -7,8 +7,9 @@
   height: auto; }
 
 ::selection {
-  background-color: #ff0044;
-  color: white; }
+  background-color: var(--purple);
+  color: white; 
+}
 
 #bg-top {
   background-image: url(../img/background.jpg);
