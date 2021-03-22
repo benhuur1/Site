@@ -7,7 +7,7 @@
   height: auto; }
 
 ::selection {
-  background-color: var(--purple);
+  background-color: var(--dark);
   color: white; 
 }
 
@@ -20,11 +20,15 @@
 
 p {
   font-size: 1rem;
-  font-weight: 300; }
+  font-weight: 400; }
 
 @media (max-width: 1200px) {
   p, .lead {
     font-size: calc(.8rem + 0.3vw); } }
+
+  .text-black{
+color: #000000!important;
+  }
     
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -88,7 +92,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #000000;
   text-align: left;
   background-color: #fff; }
 
@@ -7741,6 +7745,9 @@ button.bg-my-color-6:focus {
 
 .text-primary {
   color: #007bff !important; }
+
+.text-purple{
+  color: var(--purple) !important; }
 
 a.text-primary:hover, a.text-primary:focus {
   color: #0056b3 !important; }
