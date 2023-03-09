@@ -49,7 +49,7 @@ gulp.task(
       gulp.parallel(["sass"]),
     );
     gulp
-      .watch(["*.html", "css/style.css"])
+      .watch(["*.html", "css/style.css", "jsx/*.js"])
       .on("change", gulp.parallel(browsersync.reload));
   }),
 );

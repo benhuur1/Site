@@ -1,7 +1,7 @@
 let anoAtual = new Date().getFullYear();
 document.getElementById("anoAtual").innerHTML = anoAtual;
 let idadeAtual = 2023-1986;
-document.getElementById("idadeAtual").innerHTML = anoAtual;
+document.getElementById("idadeAtual").innerHTML = idadeAtual;
 let nav = document.querySelector("#navFooter").clientHeight;
 let footer = document.getElementById("footer");
 footer.style.marginBottom = nav + "px";
@@ -42,3 +42,10 @@ function sendmsg() {
     "_blank",
   );
 }
+
+VanillaTilt.init(document.querySelector(".column-grid-1"), {
+  max: 3,
+  speed: 100,
+  glare: true,
+  "max-glare": 1,
+});
