@@ -92,6 +92,7 @@
 .bg-text-eideveloper-1 {
   background: -webkit-linear-gradient(180deg, #8271f1, rgb(230, 31, 31))
     repeat-x;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient 5s ease infinite;
