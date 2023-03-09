@@ -42,3 +42,10 @@ function sendmsg() {
     "_blank",
   );
 }
+
+VanillaTilt.init(document.querySelector(".column-grid-1"), {
+  max: 3,
+  speed: 100,
+  glare: true,
+  "max-glare": 1,
+});

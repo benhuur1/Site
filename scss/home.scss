@@ -46,9 +46,11 @@
     display: flex;
     flex-direction: column;
     grid-gap: 24px;
-    gap: 24px;
+    // gap: 24px;
     padding-left: 24px;
     padding-right: 24px;
+    column-gap: 0px;
+    row-gap: 24px;
   }
 }
 
@@ -113,7 +115,6 @@
 }
 
 .title-1 {
-  position: relative;
   font-size: 120px;
   text-align: center;
   font-weight: 800;
@@ -121,6 +122,7 @@
     font-size: 72px;
   }
   @media (max-width: 990px) {
-    font-size: 72px;
+    font-size: 58px;
+    overflow-x: hidden;
   }
 }
