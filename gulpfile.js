@@ -9,11 +9,12 @@ gulp.task(
     return (
       gulp
         .src([
-          // "node_modules/bootstrap/scss/bootstrap.scss", 
-          "src/scss/*.scss"])
-        .pipe(sass())
-        // .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-        .pipe(gulp.dest("src/css"))
+          // "node_modules/bootstrap/scss/bootstrap.scss"
+          "scss/*.scss",
+        ])
+        // .pipe(sass())
+        .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+        .pipe(gulp.dest("css"))
         .pipe(browsersync.stream())
     );
   }),
@@ -28,8 +29,9 @@ gulp.task(
         "node_modules/bootstrap/dist/js/bootstrap.js",
         "node_modules/jquery/dist/jquery.js",
         "node_modules/popper.js/dist/umd/popper.js",
+        "jsx/*.js",
       ])
-      .pipe(gulp.dest("src/js"))
+      .pipe(gulp.dest("js"))
       .pipe(browsersync.stream());
   }),
 );
@@ -39,14 +41,16 @@ gulp.task(
   "server",
   gulp.series(["sass"], function () {
     browsersync.init({
-      server: "./src",
+      server: "./",
     });
 
     gulp.watch(
-      ["node_modules/bootstrap/scss/*.scss", "src/scss/*.scss"],
+      ["node_modules/bootstrap/scss/*.scss", "scss/*.scss", "jsx/*.js"],
       gulp.parallel(["sass"]),
     );
-    gulp.watch(["./*.html", "src/css/style.css"]).on("change", gulp.parallel(browsersync.reload));
+    gulp
+      .watch(["*.html", "css/style.css"])
+      .on("change", gulp.parallel(browsersync.reload));
   }),
 );
 

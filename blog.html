@@ -1,312 +1,212 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/chatWhatsApp.css" />
+		<link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
 
-	<title>José Ben Hur | Web Developer</title>
-</head>
-<style>
-	#whats-chat {
-  position: fixed;
-  right: 3%;
-  bottom: 10%;
-  height: auto;
-  width: auto;
-  background: #25D366;
-  padding: 12.5px;
-  border-radius: 50px; }
+    <title>José Ben Hur | Web Developer</title>
+  </head>
+  <body style="background-color: #fff5f8">
+    <nav class="navbar navbar-expand-lg navbar-dark rounded bg-purple" id="nav">
+      <a href="index.html" class="navbar-brand">José Ben Hur</a>
 
-#whats-chat:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 15px #ccc;
-  bottom: 11%;
-  z-index: 999999 !important; }
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#meuNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-/*===============================*/
-#chat-box {
-  position: fixed;
-  right: -500px;
-  bottom: 18%;
-  width: 250px;
-  height: 200px;
-  transition: all .5s; }
+      <div class="collapse navbar-collapse" id="meuNavbar">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item">
+            <a href="mailto:joseben.hur.86@gmail.com" class="nav-link">
+              <i class="fas px-2 fa-2x fa-envelope"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/benhuur1" class="nav-link">
+              <i class="fab px-2 fa-2x fa-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/jose_benhur/" class="nav-link">
+              <i class="fab px-2 fa-2x fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.linkedin.com/in/josé-ben-hur-68aa13114/"
+              class="nav-link"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-#chat-top {
-  width: 100%;
-  line-height: 2;
-  background: #128c7e;
-  color: white;
-  text-align: center;
-  border-radius: 5px 5px 0 0;
-  padding: 0 10px; }
+    <div class="container-fluid">
+      <div
+        class="row d-flex justify-content-center align-items-center"
+        id="blog-bg"
+      >
+        <h1
+          class="display-1 text-white font-weight-bold"
+          style="text-shadow: -1px 0px 6px rgba(0, 0, 0, 1)"
+        >
+          Blog
+        </h1>
+      </div>
+    </div>
 
-#chat-msg {
-  background: #ece5dd;
-  padding: 10px;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 0 25px -10px #999; }
+    <div class="bg-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <ul class="navbar-nav bg-light p-2 flex-column">
+              <h4 class="font-weight-bold">Páginas</h4>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-9 bg-white">
+            <div class="row">
+              <!-- Post 1 -->
+              <div class="blog-post col-12">
+                <h2 class="display-4 font-weight-bold">
+                  <a class="text-purple" href="plugins.html"
+                    >Lista de plugins que utilizo no Sublime Text 3</a
+                  >
+                </h2>
 
-#chat-msg p {
-  font-size: 14px;
-  padding: 5px;
-  background: white;
-  border-radius: 0 50px 50px 50px;
-  margin-bottom: 10px; }
+                <p class="text-black lead">
+                  Lista com 19 Plugins que utilizo no Sublime Text 3[...]
+                </p>
 
-#chat-form {
-  display: flex; }
+                <a href="plugins.html">Continuar lendo</a>
 
-.chat-in {
-  width: 80%; }
+                <p>Por José Ben Hur | 23/03/2021</p>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-#chat-form input {
-  border-radius: 5px 0 5px 5px;
-  border: none;
-  outline: none;
-  font-size: 14px;
-  padding: 5px;
-  line-height: 2; }
+    <div class="w-100 border-top border-dark mt-5 bg-purple" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col py-5 text-center text-white">
+            <h5>Devenvolvido por José Ben Hur</h5>
+            <p class="mb-0">Feito por mim com muita dedicação</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-#send-btn {
-  width: 20%;
-  padding: 0 5px; }
+    <nav
+      class="navbar navbar-expand navbar-dark fixed-bottom"
+      style="background-color: black"
+      id="navFooter"
+    >
+      <div class="container d-flex align-items-center justify-content-center">
+        <ul class="navbar-nav text-center d-flex justify-content-around">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> HOME </a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link"> BLOG </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-#chat-top-right {
-  float: right;
-  padding: 5px 0; }
+    <div id="chat-box" style="z-index: 99999">
+      <div id="chat-top">
+        Posso ajudar?
+        <span id="chat-top-right"
+          ><svg
+            id="close-box"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 48 48"
+          >
+            <path
+              d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"
+              fill="#fff"
+            ></path>
+          </svg>
+        </span>
+        <div class="clear"></div>
+      </div>
+      <div id="chat-msg">
+        <p>Envia sua mensagem, estamos prontos para atendê-lo</p>
+        <div id="chat-form">
+          <div class="chat-in">
+            <input
+              type="text"
+              id="whats-in"
+              placeholder="Digite sua mensagem..."
+            />
+          </div>
+          <div id="send-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 48 48"
+            >
+              <path
+                d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z"
+                fill="rgb(18, 140, 126)"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="whats-chat" style="z-index: 9999">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1"
+        width="35"
+        height="35"
+        viewBox="0 0 90 90"
+      >
+        <path
+          d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z"
+          fill="#FFF"
+        ></path>
+      </svg>
+    </div>
 
-#chat-box:after {
-  content: '';
-  position: absolute;
-  top: 58%;
-  left: 90%;
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-right: 25px solid #ece5dd; }
-
-.right {
-  float: right; }
-
-.clear {
-  clear: both; }
-	.container-overlay
-	{
-		position: relative;
-		width: 100%;
-	}
-	.image
-	{
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-	.overlay
-	{
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		opacity: 0;
-		transition: .5s ease;
-		background-color: rgba(0,0,0,0.7);
-	}
-	.container-overlay:hover .overlay
-	{
-		opacity: 1;
-	}
-	.text
-	{
-		font-size: 20px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		text-align: center;
-	}
-	#blog-bg {
-		background: linear-gradient(299deg, rgba(28,255,182,1) 0%, rgba(127,102,197,1) 87%);
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 70vh; }
-	</style>
-	<body style="background-color: #FFF5F8;">
-		<nav class="navbar navbar-expand-lg navbar-dark rounded bg-purple"  id="nav">
-			<a href="#" class="navbar-brand">José Ben Hur</a>
-
-			<button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#meuNavbar'>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="meuNavbar">
-				<ul class="navbar-nav ml-auto text-center">
-					<li class="nav-item">
-						<a href="mailto:joseben.hur.86@gmail.com" class="nav-link">
-							<i class="fas px-2 fa-2x fa-envelope"></i>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="https://github.com/benhuur1" class="nav-link">
-							<i class="fab px-2 fa-2x fa-github"></i>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="https://www.instagram.com/jose_benhur/" class="nav-link">
-							<i class="fab px-2 fa-2x fa-instagram"></i>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="https://www.linkedin.com/in/josé-ben-hur-68aa13114/" class="nav-link">
-							<i class="fab fa-linkedin fa-2x"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-
-		</nav>
-
-		<div class="container-fluid">
-			<div class="row d-flex justify-content-center align-items-center" id='blog-bg'>
-				<h1 class="display-1 text-white font-weight-bold" style="text-shadow: -1px 0px 6px rgba(0, 0, 0, 1);">Blog</h1>
-			</div>
-		</div>
-
-
-		<div class="bg-white py-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-md-3">
-						<ul class="navbar-nav bg-light p-2 flex-column">
-							<h4 class="font-weight-bold">Páginas</h4>
-							<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-							<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-						</ul>
-					</div>
-					<div class="col-12 col-md-9 bg-white">
-						<div class="row">
-
-							<!-- Post 1 -->
-							<div class="blog-post col-12">
-								<h2 class="display-4 font-weight-bold"><a  class="text-purple" href="plugins.html">Lista de plugins que utilizo no Sublime Text 3</a></h2>
-
-								<p class="text-black lead">Lista com 19 Plugins que utilizo no Sublime Text 3[...]</p>
-
-								<a href="plugins.html">Continuar lendo</a>
-
-								<p>Por José Ben Hur | 23/03/2021</p>
-								<hr>
-							</div> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="w-100 border-top border-dark mt-5 bg-purple"  id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col py-5 text-center text-white">
-						<h5>Devenvolvido por José Ben Hur</h5>
-						<p class='mb-0'>Feito por mim com muita dedicação</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<nav class="navbar navbar-expand navbar-dark fixed-bottom" style="background-color: black;" id="navFooter">
-			<div class="container d-flex align-items-center justify-content-center">
-				<ul class="navbar-nav text-center d-flex justify-content-around">
-					<li class="nav-item">
-						<a href="index.html" class="nav-link">
-							HOME
-						</a>
-					</li>  
-					<li class="nav-item">
-						<a href="blog.html" class="nav-link">
-							BLOG
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-
-<div id="chat-box" style="z-index: 99999">
-	<div id="chat-top">Posso ajudar? <span id="chat-top-right"><svg id="close-box" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
-		<path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z" fill="#fff"></path>
-	</svg></span>
-	<div class="clear"></div>
-</div>
-<div id="chat-msg">
-	<p>Envia sua mensagem, estamos prontos para atendê-lo</p>
-	<div id="chat-form">
-		<div class="chat-in">
-			<input type="text" id="whats-in" placeholder="Digite sua mensagem..."></div>
-			<div id="send-btn"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 48 48">
-				<path d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z" fill="rgb(18, 140, 126)"></path>
-			</svg>
-		</div>
-	</div>
-</div>
-</div>
-<div id="whats-chat" style="z-index: 9999">
-	<svg xmlns="http://www.w3.org/2000/svg" version="1" width="35" height="35" viewBox="0 0 90 90">
-		<path d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z" fill="#FFF"></path>
-	</svg>
-</div>
-
-
-		<!-- Optional JavaScript; choose one of the two! -->
-		<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
-		<script src="js/jquery.js"></script>
-		<script src="js/popper.js"></script>
-		<script src="js/bootstrap.js"></script>
-		
-
-		<script>
-			let nav = document.querySelector('#navFooter').clientHeight;
-			let footer = document.getElementById('footer');
-			footer.style.marginBottom = nav+"px";
-
-				document.getElementById('whats-chat').addEventListener("mouseover", showchatbox);
-	document.getElementById('chat-top-right').addEventListener("click", closechatbox);
-	document.getElementById('send-btn').addEventListener("click", sendmsg);
-	window.addEventListener("load", showchatboxtime);
-
-	function showchatbox() {
-		document.getElementById('chat-box').style.right = '8%'
-	}
-
-	function closechatbox() {
-		document.getElementById('chat-box').style.right = '-500px'
-	}
-
-	function showchatboxtime() {
-		setTimeout(launchbox, 3000)
-	}
-
-	function launchbox() {
-		document.getElementById('chat-box').style.right = '8%'
-	}
-
-	function sendmsg() {
-		var msg = document.getElementById('whats-in').value;
-		var relmsg = msg.replace(/ /g, "%20");
-		window.open('https://api.whatsapp.com/send?phone=5515997950067&text=' + relmsg, '_blank');
-	}
-		</script>
-	</body>
-	</html>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="jsx/script.js"></script>
+  </body>
+</html>

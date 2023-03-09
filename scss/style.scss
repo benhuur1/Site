@@ -8,17 +8,16 @@ $my-color-6: #ff0044;
 $purple: #6f42c1;
 $black: #000000;
 
-$theme-colors:(
-	"my-color-1": $my-color-1,
-	"my-color-2": $my-color-2,
-	"my-color-3": $my-color-3,
-	"my-color-4": $my-color-4,
-	"my-color-5": $my-color-5,
-	"my-color-6": $my-color-6,
-	"purple": $purple,
-	"black": $black,
-
-	);
+$theme-colors: (
+  "my-color-1": $my-color-1,
+  "my-color-2": $my-color-2,
+  "my-color-3": $my-color-3,
+  "my-color-4": $my-color-4,
+  "my-color-5": $my-color-5,
+  "my-color-6": $my-color-6,
+  "purple": $purple,
+  "black": $black,
+);
 
 //Classes personalizadas
 $link-color: $my-color-5;
@@ -28,32 +27,178 @@ $link-color: $my-color-5;
 .size-full,
 .size-large,
 .size-medium,
-.size-thumbnail{
-	max-width: 100%;
-	height: auto;
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
 }
 
 ::selection {
-    background-color:#ff0044;
-    color: white;
+  background-color: #ff0044;
+  color: white;
 }
-#bg-top
-{
-	background-image: url(../img/background.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 70vh;
+#bg-top {
+  // background-image: url(../img/background.jpg);
+	background: linear-gradient(299deg, rgba(28,255,182,1) 0%, rgba(127,102,197,1) 87%);
+	
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+#whats-chat {
+  position: fixed;
+  right: 3%;
+  bottom: 10%;
+  height: auto;
+  width: auto;
+  background: #25d366;
+  padding: 12.5px;
+  border-radius: 50px;
+}
+
+#whats-chat:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 15px #ccc;
+  bottom: 11%;
+  z-index: 999999 !important;
+}
+
+/*===============================*/
+#chat-box {
+  position: fixed;
+  right: -500px;
+  bottom: 18%;
+  width: 250px;
+  height: 200px;
+  transition: all 0.5s;
+}
+
+#chat-top {
+  width: 100%;
+  line-height: 2;
+  background: #128c7e;
+  color: white;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  padding: 0 10px;
+}
+
+#chat-msg {
+  background: #ece5dd;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 0 25px -10px #999;
+}
+
+#chat-msg p {
+  font-size: 14px;
+  padding: 5px;
+  background: white;
+  border-radius: 0 50px 50px 50px;
+  margin-bottom: 10px;
+}
+
+#chat-form {
+  display: flex;
+}
+
+.chat-in {
+  width: 80%;
+}
+
+#chat-form input {
+  border-radius: 5px 0 5px 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+  line-height: 2;
+}
+
+#send-btn {
+  width: 20%;
+  padding: 0 5px;
+}
+
+#chat-top-right {
+  float: right;
+  padding: 5px 0;
+}
+
+#chat-box:after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  left: 90%;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid #ece5dd;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+.container-overlay {
+  position: relative;
+  width: 100%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.container-overlay:hover .overlay {
+  opacity: 1;
+}
+.text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#blog-bg {
+  background: linear-gradient(
+    299deg,
+    rgba(28, 255, 182, 1) 0%,
+    rgba(127, 102, 197, 1) 87%
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
 }
 
 //importa o bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 
 .card-columns {
-	@include media-breakpoint-only(lg) {
-		column-count: 4;
-	}
-	@include media-breakpoint-only(xl) {
-		column-count: 5;
-	}
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
 }

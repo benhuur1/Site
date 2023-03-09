@@ -1,409 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Minha lista de plugins no sublime text 3</title>
-</head>
-<style>
-		#whats-chat {
-  position: fixed;
-  right: 3%;
-  bottom: 10%;
-  height: auto;
-  width: auto;
-  background: #25D366;
-  padding: 12.5px;
-  border-radius: 50px; }
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha lista de plugins no sublime text 3</title>
+  </head>
+  <style>
 
-#whats-chat:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 15px #ccc;
-  bottom: 11%;
-  z-index: 999999 !important; }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark rounded bg-purple" id="nav">
+      <a href="index.html" class="navbar-brand">José Ben Hur</a>
 
-/*===============================*/
-#chat-box {
-  position: fixed;
-  right: -500px;
-  bottom: 18%;
-  width: 250px;
-  height: 200px;
-  transition: all .5s; }
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#meuNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-#chat-top {
-  width: 100%;
-  line-height: 2;
-  background: #128c7e;
-  color: white;
-  text-align: center;
-  border-radius: 5px 5px 0 0;
-  padding: 0 10px; }
+      <div class="collapse navbar-collapse" id="meuNavbar">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item">
+            <a href="mailto:joseben.hur.86@gmail.com" class="nav-link">
+              <i class="fas px-2 fa-2x fa-envelope"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/benhuur1" class="nav-link">
+              <i class="fab px-2 fa-2x fa-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/jose_benhur/" class="nav-link">
+              <i class="fab px-2 fa-2x fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.linkedin.com/in/josé-ben-hur-68aa13114/"
+              class="nav-link"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="py-5 bg-light">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-12 col-md-6 mb-5">
+            <div class="shadow bg-white pt-3">
+              <div
+                class="border-transparent"
+                style="background: rgba(255, 255, 255, 0)"
+              >
+                <center>
+                  <img
+                    src="img/perfil.jpg"
+                    alt="Mão usando o celular"
+                    class="card-img-top rounded-circle"
+                    style="width: 200px !important"
+                  />
+                </center>
+                <div class="card-body text-center">
+                  <h2 class="display-4 font-weight-bolder">José Ben Hur</h2>
+                  <p class="text-muted font-weight-bolder font-italic lead">
+                    Desenvolvedor Web
+                  </p>
 
-#chat-msg {
-  background: #ece5dd;
-  padding: 10px;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 0 25px -10px #999; }
+                  <h2 class="card-title mb-4 font-weight-bold">Social</h2>
+                  <a href="mailto:joseben.hur.86@gmail.com"
+                    ><i class="fas px-2 fa-2x fa-envelope"></i
+                  ></a>
+                  <a href="https://github.com/benhuur1"
+                    ><i class="fab px-2 fa-2x fa-github"></i
+                  ></a>
+                  <a href="https://www.instagram.com/jose_benhur/"
+                    ><i class="fab px-2 fa-2x fa-instagram"></i
+                  ></a>
+                  <a href="https://www.linkedin.com/in/josé-ben-hur-68aa13114/"
+                    ><i class="fab fa-linkedin fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="bg-white shadow px-4">
+              <div class="py-5">
+                <h1 class="h2">
+                  Lista de plugins que utilizo no Sublime Text 3
+                </h1>
+                <p>Lista com 19 Plugins que utilizo no Sublime Text 3</p>
+              </div>
 
-#chat-msg p {
-  font-size: 14px;
-  padding: 5px;
-  background: white;
-  border-radius: 0 50px 50px 50px;
-  margin-bottom: 10px; }
+              <div class="box pb-4">
+                <h4>1- Emmet</h4>
+                <li>
+                  Digita uma forma simplificado para criação de códigos tags
+                  HTML depois aberta tag e gera códigos mais rápidamente.
+                </li>
+                <video loop autoplay width="100%" height="auto">
+                  <source src="img/emmet.mp4" type="video/mp4" />
+                </video>
+                <hr />
+              </div>
 
-#chat-form {
-  display: flex; }
+              <div class="box pb-4">
+                <h4>2- auto-save</h4>
+                <li>
+                  Habiliza o salvamento automático através de um atalho no
+                  teclado
+                </li>
+                <p>
+                  Para Habilita-lo basta ir até Preferences > Key Brindinds e
+                  colocar e seguinte código:
+                  <span class="badge badge-primary lead"
+                    >{ "keys": ["f10"], "command": "auto_save" }</span
+                  >
+                </p>
+                <img
+                  src="img/auto-save.png"
+                  alt="Print Key Brindings sunlime text 3"
+                  class="img-fluid"
+                  title="Print Key Bringings sunlime text 3"
+                />
+                <br />
+                <br />
+                <p>
+                  Ele necessita ser habilita toda vez que for utilizar no meu
+                  caso estou utizando o atalho
+                  <span class="badge badge-primary">F12</span>
+                </p>
+                <hr />
+              </div>
 
-.chat-in {
-  width: 80%; }
+              <div class="box pb-4">
+                <h4>3- Auto indentar os códigos</h4>
+                <li>Através de um atalho de teclado você indenta os códigos</li>
+                <span class="alert p-0 alert-primary"
+                  >{ "keys": ["f12"], "command": "reindent", "args":
+                  {"single_line": false}}</span
+                >
+                <br />
+                <p class="alert mt-3 alert-danger">
+                  Para a utilização desse comando não é necessário instalar
+                  plugins
+                </p>
+                <img
+                  src="img/reindent.png"
+                  alt="Print Key Brindings"
+                  class="img-fluid"
+                />
+                <br /><br />
+                <video loop autoplay width="100%" height="auto">
+                  <source src="img/reindent.mp4" type="video/mp4" />
+                </video>
+                <hr />
+              </div>
 
-#chat-form input {
-  border-radius: 5px 0 5px 5px;
-  border: none;
-  outline: none;
-  font-size: 14px;
-  padding: 5px;
-  line-height: 2; }
+              <div class="box pb-4">
+                <h4>4- AutoFileName</h4>
+                <li>Mostra o nome de pastas e arquivos.</li>
+                <br />
+                <img
+                  src="img/autoFileName.png"
+                  alt="Print autoFileName"
+                  class="img-fluid"
+                />
+                <hr />
+              </div>
 
-#send-btn {
-  width: 20%;
-  padding: 0 5px; }
+              <div class="box pb-4">
+                <h4>4- BracketHighlighter</h4>
+                <li>
+                  Mostra a abertura e fechamento de tags, chaves e colchetes nos
+                  códigos
+                </li>
+                <hr />
+              </div>
 
-#chat-top-right {
-  float: right;
-  padding: 5px 0; }
+              <div class="box pb-4">
+                <h4>5- LoremIpsum</h4>
+                <li>
+                  Gera text Lorem Ipsum automáticamente
+                  <span class="badge badge-primary">lorem*4</span> depois aperta
+                  a tecla <span class="badge badge-primary">Tab</span> e gerara
+                  o texto com 4 palavras.
+                </li>
+                <hr />
+              </div>
 
-#chat-box:after {
-  content: '';
-  position: absolute;
-  top: 58%;
-  left: 90%;
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-right: 25px solid #ece5dd; }
+              <div class="box pb-4">
+                <h4>6- Color Highlighter</h4>
+                <li>Mostra como a cor no código vai ficar na aplicação</li>
+                <img
+                  src="img/color-hightlighter.png"
+                  class="img-fluid"
+                  alt="Print Color HighLighter"
+                />
+                <hr />
+              </div>
 
-.right {
-  float: right; }
+              <div class="box pb-4">
+                <h4>7- ColorPicker</h4>
+                <li>
+                  Abre uma paleta de cores para escolher ao abertar o atalho
+                  <span class="badge badge-primary">Ctrl+Shift+C</span>
+                </li>
+                <img
+                  src="img/colorPicker.png"
+                  class="img-fluid"
+                  alt="Print ColorPiker"
+                />
+                <hr />
+              </div>
 
-.clear {
-  clear: both; }
-</style>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark rounded bg-purple"  id="nav">
-		<a href="#" class="navbar-brand">José Ben Hur</a>
+              <div class="box pb-4">
+                <h4>8- HTML5</h4>
+                <li>Coloeçã de tags HTML5 para auto completar o código</li>
+                <hr />
+              </div>
 
-		<button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#meuNavbar'>
-			<span class="navbar-toggler-icon"></span>
-		</button>
+              <div class="box pb-4">
+                <h4>9- CSS Extended Completions</h4>
+                <li>Um auto completavel de códigos CSS</li>
+                <hr />
+              </div>
 
-		<div class="collapse navbar-collapse" id="meuNavbar">
-			<ul class="navbar-nav ml-auto text-center">
-				<li class="nav-item">
-					<a href="mailto:joseben.hur.86@gmail.com" class="nav-link">
-						<i class="fas px-2 fa-2x fa-envelope"></i>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="https://github.com/benhuur1" class="nav-link">
-						<i class="fab px-2 fa-2x fa-github"></i>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="https://www.instagram.com/jose_benhur/" class="nav-link">
-						<i class="fab px-2 fa-2x fa-instagram"></i>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="https://www.linkedin.com/in/josé-ben-hur-68aa13114/" class="nav-link">
-						<i class="fab fa-linkedin fa-2x"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
+              <div class="box pb-4">
+                <h4>10- CSS Snippets</h4>
+                <li>
+                  Como o próprio nome já fala é uma coleção pronta de códigos
+                  CSS
+                </li>
+                <hr />
+              </div>
 
-	</nav>
-	<div class="py-5 bg-light">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="col-sm-12 col-md-6 mb-5">
-					<div class="shadow bg-white pt-3">
-						<div class="border-transparent" style="background: rgba( 255,255,255, 0);">
-							<center>
-								<img src="img/perfil.jpg" alt="Mão usando o celular"  class="card-img-top rounded-circle" style="width: 200px!important" >
-							</center>
-							<div class="card-body text-center">
-								<h2 class="display-4 font-weight-bolder">
-									José Ben Hur
-								</h2>
-								<p class="text-muted font-weight-bolder font-italic lead">
-									Analista de TI e Desenvolvedor Web
-								</p>
+              <div class="box pb-4">
+                <h4>11- FileIcons</h4>
+                <li>
+                  Mostra o icone da extenção do arquivo por exemplo se seu
+                  arquivo for extensão .html mostra o icone do HTML
+                </li>
+                <hr />
+              </div>
 
-								<h2 class="card-title mb-4 font-weight-bold">
-									Social
-								</h2>
-								<a href="mailto:joseben.hur.86@gmail.com"><i class="fas px-2 fa-2x fa-envelope"></i></a>
-								<a href="https://github.com/benhuur1"><i class="fab px-2 fa-2x fa-github"></i></a>
-								<a href="https://www.instagram.com/jose_benhur/"><i class="fab px-2 fa-2x fa-instagram"></i></a>
-								<a href="https://www.linkedin.com/in/josé-ben-hur-68aa13114/"><i class="fab fa-linkedin fa-2x"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="bg-white shadow px-4">
-						<div class="py-5">
-							<h1 class="h2">Lista de plugins que utilizo no Sublime Text 3</h1>
-							<p>Lista com 19 Plugins que utilizo no Sublime Text 3</p>
-						</div>
+              <div class="box pb-4">
+                <h4>12- JavaScript Completions</h4>
+                <li>Auto Completavel para a JavaScript</li>
+                <hr />
+              </div>
 
-						<div class="box pb-4">
-							<h4>1- Emmet</h4>
-							<li>Digita uma forma simplificado para criação de códigos tags HTML depois aberta tag e gera códigos mais rápidamente.</li>
-							<video loop  autoplay  width="100%" height="auto">
-								<source src="img/emmet.mp4" type="video/mp4">
-								</video>
-								<hr>
-							</div>
+              <div class="box pb-4">
+                <h4>13- JavaScriptNext - ES6 Syntax</h4>
+                <li>Sintaxe Ecma Script 6</li>
+                <hr />
+              </div>
 
+              <div class="box pb-4">
+                <h4>14- jQuery</h4>
+                <li>Auto Completáveis para funções da biblioteca JQuery</li>
+                <hr />
+              </div>
 
-							<div class="box pb-4">
-								<h4>2- auto-save</h4>
-								<li>Habiliza o salvamento automático através de um atalho no teclado</li>
-								<p>Para Habilita-lo basta ir até Preferences > Key Brindinds e colocar e seguinte código: <span class="badge badge-primary lead">{ "keys": ["f10"], "command": "auto_save" }</span></p>
-								<img src="img/auto-save.png" alt="Print Key Brindings sunlime text 3" class="img-fluid" title="Print Key Bringings sunlime text 3">
-								<br>
-								<br>
-								<p>Ele necessita ser habilita toda vez que for utilizar no meu caso estou utizando o atalho <span class="badge badge-primary">F12</span></p>
-								<hr>
-							</div>
+              <div class="box pb-4">
+                <h4>15- Material Theme</h4>
+                <li>Mudar o visual do Sublime Text 3</li>
+                <hr />
+              </div>
 
-							<div class="box pb-4">
-								<h4>3- Auto indentar os códigos</h4>
-								<li>Através de um atalho de teclado você indenta os códigos</li>
-								<span class="alert p-0  alert-primary">{ "keys": ["f12"], "command": "reindent", "args": {"single_line": false}}</span>
-								<br>	
-								<p class="alert  mt-3 alert-danger">Para a utilização desse comando não é necessário instalar plugins</p>
-								<img src="img/reindent.png" alt="Print Key Brindings" class="img-fluid">
-								<br><br>
-								<video loop autoplay  width="100%" height="auto">
-									<source src="img/reindent.mp4" type="video/mp4">
-									</video>
-									<hr>
-								</div>
+              <div class="box pb-4">
+                <h4>16- PHPIntel</h4>
+                <li>Completar automaticamente para funções e objetos PHP</li>
+                <hr />
+              </div>
 
-								<div class="box pb-4">
-									<h4>4- AutoFileName</h4>
-									<li>Mostra o nome de pastas e arquivos.</li> <br>
-									<img src="img/autoFileName.png" alt="Print autoFileName" class="img-fluid">
-									<hr>
-								</div>
+              <div class="box pb-4">
+                <h4>17- SideBarEnhancements</h4>
+                <li>
+                  Aprimoramentos na barra lateral Sublime Text. Arquivos e
+                  pastas.
+                </li>
+                <hr />
+              </div>
 
-								<div class="box pb-4">
-									<h4>4- BracketHighlighter</h4>
-									<li>Mostra a abertura e fechamento de tags, chaves e colchetes nos códigos</li>
-									<hr>
-								</div>
+              <div class="box pb-4">
+                <h4>18- Bootstrap 4 Autocomplete</h4>
+                <li>Auto completa com as classes do bootstrap 4</li>
+                <hr />
+              </div>
 
-								<div class="box pb-4">
-									<h4>5- LoremIpsum</h4>
-									<li>Gera text Lorem Ipsum automáticamente <span class="badge badge-primary">lorem*4</span> depois aperta a tecla <span class="badge badge-primary">Tab</span> e gerara o texto com 4 palavras.</li>
-									<hr>
-								</div>
+              <div class="box pb-4">
+                <h4>19- AdvancedNewFile</h4>
+                <li>Criação Rápida de novos arquivos</li>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 border-top border-dark mt-5 bg-purple" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col py-5 text-center text-white">
+            <h5>Devenvolvido por José Ben Hur</h5>
+            <p class="mb-0">Feito por mim com muita dedicação</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-								<div class="box pb-4">
-									<h4>6- Color Highlighter</h4>
-									<li>Mostra como a cor no código vai ficar na aplicação</li>
-									<img src="img/color-hightlighter.png" class="img-fluid" alt="Print Color HighLighter">
-									<hr>
-								</div>
+    <nav
+      class="navbar navbar-expand navbar-dark fixed-bottom"
+      style="background-color: black"
+      id="navFooter"
+    >
+      <div class="container d-flex align-items-center justify-content-center">
+        <ul class="navbar-nav text-center d-flex justify-content-around">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> HOME </a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link"> BLOG </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-								<div class="box pb-4">
-									<h4>7- ColorPicker</h4>
-									<li>Abre uma paleta de cores para escolher ao abertar o atalho <span class="badge badge-primary">Ctrl+Shift+C</span></li>
-									<img src="img/colorPicker.png" class="img-fluid" alt="Print ColorPiker">
-									<hr>
-								</div>
+    <div id="chat-box" style="z-index: 99999">
+      <div id="chat-top">
+        Posso ajudar?
+        <span id="chat-top-right"
+          ><svg
+            id="close-box"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 48 48"
+          >
+            <path
+              d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"
+              fill="#fff"
+            ></path>
+            </svg></span>
+        <div class="clear"></div>
+      </div>
+      <div id="chat-msg">
+        <p>Envia sua mensagem, estamos prontos para atendê-lo</p>
+        <div id="chat-form">
+          <div class="chat-in">
+            <input
+              type="text"
+              id="whats-in"
+              placeholder="Digite sua mensagem..."
+            />
+          </div>
+          <div id="send-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 48 48"
+            >
+              <path
+                d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z"
+                fill="rgb(18, 140, 126)"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="whats-chat" style="z-index: 9999">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1"
+        width="35"
+        height="35"
+        viewBox="0 0 90 90"
+      >
+        <path
+          d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z"
+          fill="#FFF"
+        ></path>
+      </svg>
+    </div>
 
-								<div class="box pb-4">
-									<h4>8- HTML5</h4>
-									<li>Coloeçã de tags HTML5 para auto  completar o código</li>
-									<hr>
-								</div>
-
-								<div class="box pb-4">
-									<h4>9- CSS Extended Completions</h4>
-									<li>Um auto completavel de códigos CSS</li>
-									<hr>
-								</div>
-
-								<div class="box pb-4">
-									<h4>10- CSS Snippets</h4>
-									<li>Como o próprio nome já fala é uma coleção pronta de códigos CSS</li>
-									<hr>
-								</div>
-
-								<div class="box pb-4">
-									<h4>11- FileIcons</h4>
-									<li>Mostra o icone da extenção do arquivo por exemplo se seu arquivo for extensão .html mostra o icone do HTML</li>
-									<hr>
-								</div>
-
-								<div class="box pb-4">
-									<h4>12- JavaScript Completions</h4>
-									<li>Auto Completavel para a JavaScript</li>
-									<hr>
-								</div>
-
-								<div class="box pb-4">
-									<h4>13- JavaScriptNext - ES6 Syntax</h4>
-									<li>Sintaxe Ecma Script 6</li>
-									<hr>
-								</div>
-
-								<div class="box pb-4">
-									<h4>14- jQuery</h4>
-									<li>Auto Completáveis para funções da biblioteca JQuery</li>
-									<hr>
-								</div>
-
-								<div class="box pb-4">
-									<h4>15- Material Theme</h4>
-									<li>Mudar o visual do Sublime Text 3</li>
-									<hr>
-								</div>
-
-								<div class="box pb-4">
-									<h4>16- PHPIntel</h4>
-									<li>Completar automaticamente para funções e objetos PHP</li>
-									<hr>
-								</div>
-
-
-								<div class="box pb-4">
-									<h4>17- SideBarEnhancements</h4>
-									<li>Aprimoramentos na barra lateral Sublime Text. Arquivos e pastas.</li>
-									<hr>
-								</div>
-
-								<div class="box pb-4">
-									<h4>18- Bootstrap 4 Autocomplete</h4>
-									<li>Auto completa com as classes do bootstrap 4</li>
-									<hr>
-								</div>
-
-								<div class="box pb-4">
-									<h4>19- AdvancedNewFile</h4>
-									<li>Criação Rápida de novos arquivos</li>
-									<hr>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="w-100 border-top border-dark mt-5 bg-purple"  id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col py-5 text-center text-white">
-							<h5>Devenvolvido por José Ben Hur</h5>
-							<p class='mb-0'>Feito por mim com muita dedicação</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<nav class="navbar navbar-expand navbar-dark fixed-bottom" style="background-color: black;" id="navFooter">
-				<div class="container d-flex align-items-center justify-content-center">
-					<ul class="navbar-nav text-center d-flex justify-content-around">
-						<li class="nav-item">
-							<a href="index.html" class="nav-link">
-								HOME
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="blog.html" class="nav-link">
-								BLOG
-							</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-
-<div id="chat-box" style="z-index: 99999">
-	<div id="chat-top">Posso ajudar? <span id="chat-top-right"><svg id="close-box" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
-		<path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z" fill="#fff"></path>
-	</svg></span>
-	<div class="clear"></div>
-</div>
-<div id="chat-msg">
-	<p>Envia sua mensagem, estamos prontos para atendê-lo</p>
-	<div id="chat-form">
-		<div class="chat-in">
-			<input type="text" id="whats-in" placeholder="Digite sua mensagem..."></div>
-			<div id="send-btn"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 48 48">
-				<path d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z" fill="rgb(18, 140, 126)"></path>
-			</svg>
-		</div>
-	</div>
-</div>
-</div>
-<div id="whats-chat" style="z-index: 9999">
-	<svg xmlns="http://www.w3.org/2000/svg" version="1" width="35" height="35" viewBox="0 0 90 90">
-		<path d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z" fill="#FFF"></path>
-	</svg>
-</div>
-
-			<!-- Optional JavaScript; choose one of the two! -->
-			<!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
-			<script src="js/jquery.js"></script>
-			<script src="js/popper.js"></script>
-			<script src="js/bootstrap.js"></script>
-
-
-			<script>
-				let nav = document.querySelector('#navFooter').clientHeight;
-				let footer = document.getElementById('footer');
-				footer.style.marginBottom = nav+"px";
-				$(document).ready(function() {
-					$('').fadeIn('slow/400/fast', function() {
-						
-					});
-				});
-
-document.getElementById('whats-chat').addEventListener("mouseover", showchatbox);
-	document.getElementById('chat-top-right').addEventListener("click", closechatbox);
-	document.getElementById('send-btn').addEventListener("click", sendmsg);
-	window.addEventListener("load", showchatboxtime);
-
-	function showchatbox() {
-		document.getElementById('chat-box').style.right = '8%'
-	}
-
-	function closechatbox() {
-		document.getElementById('chat-box').style.right = '-500px'
-	}
-
-	function showchatboxtime() {
-		setTimeout(launchbox, 3000)
-	}
-
-	function launchbox() {
-		document.getElementById('chat-box').style.right = '8%'
-	}
-
-	function sendmsg() {
-		var msg = document.getElementById('whats-in').value;
-		var relmsg = msg.replace(/ /g, "%20");
-		window.open('https://api.whatsapp.com/send?phone=5515997950067&text=' + relmsg, '_blank');
-	}
-			</script>
-		</body>
-		</html>	
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="jsx/script.js"></script>
+  </body>
+</html>
